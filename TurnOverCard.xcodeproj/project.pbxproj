@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5307E2E721394AFD003F1C06 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307E2E621394AFD003F1C06 /* SoundManager.swift */; };
+		5307E2EC21394C1D003F1C06 /* BackSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5307E2EA21394C1D003F1C06 /* BackSound.mp3 */; };
+		5307E2ED21394C1D003F1C06 /* GameOver.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5307E2EB21394C1D003F1C06 /* GameOver.wav */; };
+		5307E2EF21394C6B003F1C06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5307E2EE21394C6B003F1C06 /* AVFoundation.framework */; };
+		532450B42137FE0A00087FB2 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532450B32137FE0A00087FB2 /* Configure.swift */; };
+		532474FC21339EE900E64F51 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532474FB21339EE900E64F51 /* GameOverViewController.swift */; };
+		532474FE21339F3000E64F51 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532474FD21339F3000E64F51 /* GameViewController.swift */; };
+		532475012133D33C00E64F51 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532474FF2133D33C00E64F51 /* Card.swift */; };
+		532475022133D33C00E64F51 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532475002133D33C00E64F51 /* Concentration.swift */; };
+		5331F2B72131555400E31374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331F2B62131555400E31374 /* AppDelegate.swift */; };
+		5331F2BC2131555400E31374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5331F2BA2131555400E31374 /* Main.storyboard */; };
+		5331F2BE2131555600E31374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5331F2BD2131555600E31374 /* Assets.xcassets */; };
+		5331F2C12131555600E31374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5331F2BF2131555600E31374 /* LaunchScreen.storyboard */; };
+		5331F2CC2131555600E31374 /* TurnOverCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331F2CB2131555600E31374 /* TurnOverCardTests.swift */; };
+		5331F2D72131555600E31374 /* TurnOverCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5331F2D62131555600E31374 /* TurnOverCardUITests.swift */; };
+		535773A82140CE5D0004C446 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535773A62140CE5D0004C446 /* WebViewController.swift */; };
+		535773A92140CE5D0004C446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535773A72140CE5D0004C446 /* ViewController.swift */; };
+		53B1C0E82137BAA6007E2D48 /* CardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B1C0E72137BAA6007E2D48 /* CardButtonView.swift */; };
+		53F993AC213397690060617C /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F993AB213397690060617C /* GameConfig.swift */; };
+		C82ABC5FAA7D73B95E138A51 /* Pods_TurnOverCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49F32BB3CA279DE90B9231B /* Pods_TurnOverCard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5331F2C82131555600E31374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5331F2AB2131555400E31374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5331F2B22131555400E31374;
+			remoteInfo = TurnOverCard;
+		};
+		5331F2D32131555600E31374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5331F2AB2131555400E31374 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5331F2B22131555400E31374;
+			remoteInfo = TurnOverCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5307E2E621394AFD003F1C06 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		5307E2EA21394C1D003F1C06 /* BackSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackSound.mp3; sourceTree = "<group>"; };
+		5307E2EB21394C1D003F1C06 /* GameOver.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameOver.wav; sourceTree = "<group>"; };
+		5307E2EE21394C6B003F1C06 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		532450B32137FE0A00087FB2 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
+		532474FB21339EE900E64F51 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		532474FD21339F3000E64F51 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		532474FF2133D33C00E64F51 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		532475002133D33C00E64F51 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		5331F2B32131555400E31374 /* TurnOverCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurnOverCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5331F2B62131555400E31374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5331F2BB2131555400E31374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5331F2BD2131555600E31374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5331F2C02131555600E31374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5331F2C22131555600E31374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5331F2C72131555600E31374 /* TurnOverCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnOverCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5331F2CB2131555600E31374 /* TurnOverCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOverCardTests.swift; sourceTree = "<group>"; };
+		5331F2CD2131555600E31374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5331F2D22131555600E31374 /* TurnOverCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnOverCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5331F2D62131555600E31374 /* TurnOverCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOverCardUITests.swift; sourceTree = "<group>"; };
+		5331F2D82131555600E31374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535773A62140CE5D0004C446 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		535773A72140CE5D0004C446 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53B1C0E72137BAA6007E2D48 /* CardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButtonView.swift; sourceTree = "<group>"; };
+		53F993AB213397690060617C /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		97A3C52D905A7A657B43EA9D /* Pods-TurnOverCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnOverCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TurnOverCard/Pods-TurnOverCard.debug.xcconfig"; sourceTree = "<group>"; };
+		D49F32BB3CA279DE90B9231B /* Pods_TurnOverCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TurnOverCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F35251BE182C9A0142C68F /* Pods-TurnOverCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurnOverCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-TurnOverCard/Pods-TurnOverCard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5331F2B02131555400E31374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5307E2EF21394C6B003F1C06 /* AVFoundation.framework in Frameworks */,
+				C82ABC5FAA7D73B95E138A51 /* Pods_TurnOverCard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331F2C42131555600E31374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331F2CF2131555600E31374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EFB9F42EA2B1B405CBB1612 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97A3C52D905A7A657B43EA9D /* Pods-TurnOverCard.debug.xcconfig */,
+				E9F35251BE182C9A0142C68F /* Pods-TurnOverCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5331F2AA2131555400E31374 = {
+			isa = PBXGroup;
+			children = (
+				5331F2B52131555400E31374 /* TurnOverCard */,
+				5331F2CA2131555600E31374 /* TurnOverCardTests */,
+				5331F2D52131555600E31374 /* TurnOverCardUITests */,
+				5331F2B42131555400E31374 /* Products */,
+				2EFB9F42EA2B1B405CBB1612 /* Pods */,
+				DD48A00F7C4FD3C377D548ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5331F2B42131555400E31374 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5331F2B32131555400E31374 /* TurnOverCard.app */,
+				5331F2C72131555600E31374 /* TurnOverCardTests.xctest */,
+				5331F2D22131555600E31374 /* TurnOverCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5331F2B52131555400E31374 /* TurnOverCard */ = {
+			isa = PBXGroup;
+			children = (
+				5331F2B62131555400E31374 /* AppDelegate.swift */,
+				532474FD21339F3000E64F51 /* GameViewController.swift */,
+				535773A72140CE5D0004C446 /* ViewController.swift */,
+				535773A62140CE5D0004C446 /* WebViewController.swift */,
+				53B1C0E72137BAA6007E2D48 /* CardButtonView.swift */,
+				5307E2E621394AFD003F1C06 /* SoundManager.swift */,
+				532474FF2133D33C00E64F51 /* Card.swift */,
+				532475002133D33C00E64F51 /* Concentration.swift */,
+				53F993AB213397690060617C /* GameConfig.swift */,
+				532474FB21339EE900E64F51 /* GameOverViewController.swift */,
+				532450B32137FE0A00087FB2 /* Configure.swift */,
+				5307E2EB21394C1D003F1C06 /* GameOver.wav */,
+				5307E2EA21394C1D003F1C06 /* BackSound.mp3 */,
+				5331F2BA2131555400E31374 /* Main.storyboard */,
+				5331F2BD2131555600E31374 /* Assets.xcassets */,
+				5331F2BF2131555600E31374 /* LaunchScreen.storyboard */,
+				5331F2C22131555600E31374 /* Info.plist */,
+			);
+			path = TurnOverCard;
+			sourceTree = "<group>";
+		};
+		5331F2CA2131555600E31374 /* TurnOverCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				5331F2CB2131555600E31374 /* TurnOverCardTests.swift */,
+				5331F2CD2131555600E31374 /* Info.plist */,
+			);
+			path = TurnOverCardTests;
+			sourceTree = "<group>";
+		};
+		5331F2D52131555600E31374 /* TurnOverCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5331F2D62131555600E31374 /* TurnOverCardUITests.swift */,
+				5331F2D82131555600E31374 /* Info.plist */,
+			);
+			path = TurnOverCardUITests;
+			sourceTree = "<group>";
+		};
+		DD48A00F7C4FD3C377D548ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5307E2EE21394C6B003F1C06 /* AVFoundation.framework */,
+				D49F32BB3CA279DE90B9231B /* Pods_TurnOverCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5331F2B22131555400E31374 /* TurnOverCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5331F2DB2131555600E31374 /* Build configuration list for PBXNativeTarget "TurnOverCard" */;
+			buildPhases = (
+				21196693703884D0EECC977B /* [CP] Check Pods Manifest.lock */,
+				5331F2AF2131555400E31374 /* Sources */,
+				5331F2B02131555400E31374 /* Frameworks */,
+				5331F2B12131555400E31374 /* Resources */,
+				992E1686F6785EF92508A593 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurnOverCard;
+			productName = TurnOverCard;
+			productReference = 5331F2B32131555400E31374 /* TurnOverCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5331F2C62131555600E31374 /* TurnOverCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5331F2DE2131555600E31374 /* Build configuration list for PBXNativeTarget "TurnOverCardTests" */;
+			buildPhases = (
+				5331F2C32131555600E31374 /* Sources */,
+				5331F2C42131555600E31374 /* Frameworks */,
+				5331F2C52131555600E31374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5331F2C92131555600E31374 /* PBXTargetDependency */,
+			);
+			name = TurnOverCardTests;
+			productName = TurnOverCardTests;
+			productReference = 5331F2C72131555600E31374 /* TurnOverCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5331F2D12131555600E31374 /* TurnOverCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5331F2E12131555600E31374 /* Build configuration list for PBXNativeTarget "TurnOverCardUITests" */;
+			buildPhases = (
+				5331F2CE2131555600E31374 /* Sources */,
+				5331F2CF2131555600E31374 /* Frameworks */,
+				5331F2D02131555600E31374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5331F2D42131555600E31374 /* PBXTargetDependency */,
+			);
+			name = TurnOverCardUITests;
+			productName = TurnOverCardUITests;
+			productReference = 5331F2D22131555600E31374 /* TurnOverCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5331F2AB2131555400E31374 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = jerryHU;
+				TargetAttributes = {
+					5331F2B22131555400E31374 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5331F2C62131555600E31374 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5331F2B22131555400E31374;
+					};
+					5331F2D12131555600E31374 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5331F2B22131555400E31374;
+					};
+				};
+			};
+			buildConfigurationList = 5331F2AE2131555400E31374 /* Build configuration list for PBXProject "TurnOverCard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5331F2AA2131555400E31374;
+			productRefGroup = 5331F2B42131555400E31374 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5331F2B22131555400E31374 /* TurnOverCard */,
+				5331F2C62131555600E31374 /* TurnOverCardTests */,
+				5331F2D12131555600E31374 /* TurnOverCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5331F2B12131555400E31374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5331F2C12131555600E31374 /* LaunchScreen.storyboard in Resources */,
+				5307E2ED21394C1D003F1C06 /* GameOver.wav in Resources */,
+				5331F2BE2131555600E31374 /* Assets.xcassets in Resources */,
+				5331F2BC2131555400E31374 /* Main.storyboard in Resources */,
+				5307E2EC21394C1D003F1C06 /* BackSound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331F2C52131555600E31374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331F2D02131555600E31374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21196693703884D0EECC977B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TurnOverCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		992E1686F6785EF92508A593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TurnOverCard/Pods-TurnOverCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LDProgressView/LDProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LDProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TurnOverCard/Pods-TurnOverCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5331F2AF2131555400E31374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535773A82140CE5D0004C446 /* WebViewController.swift in Sources */,
+				53F993AC213397690060617C /* GameConfig.swift in Sources */,
+				532475012133D33C00E64F51 /* Card.swift in Sources */,
+				5331F2B72131555400E31374 /* AppDelegate.swift in Sources */,
+				532450B42137FE0A00087FB2 /* Configure.swift in Sources */,
+				535773A92140CE5D0004C446 /* ViewController.swift in Sources */,
+				53B1C0E82137BAA6007E2D48 /* CardButtonView.swift in Sources */,
+				532475022133D33C00E64F51 /* Concentration.swift in Sources */,
+				532474FE21339F3000E64F51 /* GameViewController.swift in Sources */,
+				5307E2E721394AFD003F1C06 /* SoundManager.swift in Sources */,
+				532474FC21339EE900E64F51 /* GameOverViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331F2C32131555600E31374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5331F2CC2131555600E31374 /* TurnOverCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5331F2CE2131555600E31374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5331F2D72131555600E31374 /* TurnOverCardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5331F2C92131555600E31374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5331F2B22131555400E31374 /* TurnOverCard */;
+			targetProxy = 5331F2C82131555600E31374 /* PBXContainerItemProxy */;
+		};
+		5331F2D42131555600E31374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5331F2B22131555400E31374 /* TurnOverCard */;
+			targetProxy = 5331F2D32131555600E31374 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5331F2BA2131555400E31374 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5331F2BB2131555400E31374 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5331F2BF2131555600E31374 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5331F2C02131555600E31374 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5331F2D92131555600E31374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5331F2DA2131555600E31374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5331F2DC2131555600E31374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A3C52D905A7A657B43EA9D /* Pods-TurnOverCard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TurnOverCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turnovercard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5331F2DD2131555600E31374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F35251BE182C9A0142C68F /* Pods-TurnOverCard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TurnOverCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turnovercard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5331F2DF2131555600E31374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnOverCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turnovercard.jerryHU.TurnOverCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnOverCard.app/TurnOverCard";
+			};
+			name = Debug;
+		};
+		5331F2E02131555600E31374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnOverCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turnovercard.jerryHU.TurnOverCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnOverCard.app/TurnOverCard";
+			};
+			name = Release;
+		};
+		5331F2E22131555600E31374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnOverCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turnovercard.jerryHU.TurnOverCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurnOverCard;
+			};
+			name = Debug;
+		};
+		5331F2E32131555600E31374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TurnOverCardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.turnovercard.jerryHU.TurnOverCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TurnOverCard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5331F2AE2131555400E31374 /* Build configuration list for PBXProject "TurnOverCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331F2D92131555600E31374 /* Debug */,
+				5331F2DA2131555600E31374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5331F2DB2131555600E31374 /* Build configuration list for PBXNativeTarget "TurnOverCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331F2DC2131555600E31374 /* Debug */,
+				5331F2DD2131555600E31374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5331F2DE2131555600E31374 /* Build configuration list for PBXNativeTarget "TurnOverCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331F2DF2131555600E31374 /* Debug */,
+				5331F2E02131555600E31374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5331F2E12131555600E31374 /* Build configuration list for PBXNativeTarget "TurnOverCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5331F2E22131555600E31374 /* Debug */,
+				5331F2E32131555600E31374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5331F2AB2131555400E31374 /* Project object */;
+}
